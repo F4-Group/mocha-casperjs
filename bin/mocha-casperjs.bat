@@ -33,4 +33,4 @@ IF "%showhelp%" == "true" (
  echo    --client-scripts    Comma-separated array of lists to inject on the client every page load
  exit /b 0
 )
-%MOCHA_CASPER_PATH%.\..\..\casperjs\bin\casperjs.exe %MOCHA_CASPER_PATH%\cli.js --mocha-casperjs-path=%MOCHA_CASPER_PATH%.. %*
+%MOCHA_CASPER_PATH%.\..\..\casperjs\bin\casperjs.exe --ignore-ssl-errors=yes --ssl-protocol=any %MOCHA_CASPER_PATH%\cli.js --mocha-casperjs-path=%MOCHA_CASPER_PATH%.. %*
