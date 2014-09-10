@@ -36,4 +36,4 @@ fi
 PHANTOMJS_EXECUTABLE=$mcPath/../../phantomjs/bin/phantomjs
 PATH=./node_modules/.bin:$PATH
 
-$mcPath/../../casperjs/bin/casperjs $mcPath/cli.js --mocha-casperjs-path=$mcPath/.. $*
+$mcPath/../../casperjs/bin/casperjs --ignore-ssl-errors=yes --ssl-protocol=any $mcPath/cli.js --mocha-casperjs-path=$mcPath/.. $*
